@@ -1,5 +1,8 @@
 -- We create the select statement to extract all the data we need so we can create our dashboards with Excel and Tableau
 
+-- We want the order id, the first and last name of the customers, city, state, order date, total units purchased, revenue from that order, name of the product,
+-- category, brand for the product, the store name and the first and last name of our sales representatives.
+-- Then we use different joins with the other tables to obtain that information using the primary and foreign keys.
 SELECT 
 	ord.order_id, 
 	CONCAT (cus.first_name, ' ' , cus.last_name) AS 'customers',
